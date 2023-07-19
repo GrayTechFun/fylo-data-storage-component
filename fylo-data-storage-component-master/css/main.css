@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  background-image: url(../images/bg-mobile.png);
+  background-repeat: no-repeat;
+  width: 37.5em;
+  margin: 0 auto;
+  height: 100vh;
+  padding-top: 13em;
+  margin-top: 2em;
+}
+
+.top {
+  width: 30em;
+  height: 20em;
+  margin: 0 auto;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 1em 10em 1em 1em;
+}
+
+.icon1 {
+  width: 4em;
+  height: 4.5em;
+  border-radius: 0.5em;
+  padding: 1em;
+  background-color: #0c0e21;
+  text-align: center;
+  margin-left: 2em;
+}
+
+.icon2,
+.icon3 {
+  width: 5em;
+  margin-left: 1em;
+}
+
+.logo {
+  margin: 3em 2em;
+}
+
+h3 {
+  color: hsl(243, 100%, 93%);
+  font-size: 1.4rem;
+}
+
+.bottom {
+  padding-top: 3em;
+  padding-left: 3em;
+  background-color: hsl(228, 56%, 26%);
+  width: 30em;
+  margin-left: 3.5em;
+  margin-top: 1.5em;
+  border-radius: 0.5em;
+  padding-bottom: 5em;
+}
+
+.w3-border {
+  width: 26em;
+  height: 2em;
+  background-color: #11173a;
+  border-radius: 5em;
+  margin-top: 2em;
+  margin-left: -1.5em;
+}
+
+.w3-grey {
+  width: 20em;
+  height: 2em;
+  background: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: 5em;
+  margin-left: 0.3em;
+}
+
+.gb {
+  display: flex;
+  gap: 18em;
+  margin-top: 1em;
+}
+
+.gb p {
+  color: white;
+  font-weight: 700;
+}
+
+.left {
+  padding-top: 0.5em;
+  text-align: center;
+  width: 18em;
+  height: 6em;
+  border-radius: 0.5em;
+  background-color: white;
+  margin-top: -3em;
+  margin-left: 9em;
+}
+
+.left p {
+  color: gray;
+  font-weight: 700;
+}
+
+.left-185 {
+  color: black;
+  font-size: 4em;
+  font-weight: 700;
+}
+
+.triangle {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  border-top: 2em solid white;
+  border-left: 2em solid transparent;
+  position: absolute;
+  margin-top: 8em;
+  margin-left: 55em;
+}
+
+@media only screen and (min-width: 1220px) {
+  .container {
+    margin-top: 13em;
+    padding-left: 23em;
+    width: auto;
+    max-width: 1200px;
+    display: flex;
+    background-image: url(../images/bg-desktop.png);
+    background-repeat: no-repeat;
+    justify-content: center;
+  }
+
+  .bottom {
+    width: 50em;
+    height: 15em;
+    margin-top: 5em;
+  }
+  .w3-border {
+    width: 45em;
+  }
+
+  .w3-grey {
+    width: 35em;
+  }
+
+  .left {
+    border-radius: 0.5em 0.5em 0 0.5em;
+  }
+
+  .gb {
+    gap: 37em;
+  }
+  .left {
+    margin-left: -22em;
+    margin-right: 20em;
+    margin-top: 2em;
+  }
+
+  .triangle {
+    visibility: visible;
+  }
+}
